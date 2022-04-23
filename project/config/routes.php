@@ -8,6 +8,9 @@
 		new Route('/act-1/', 'test', 'act1'),
 		new Route('/act-2/', 'test', 'act2'),
 		new Route('/act-3/', 'test', 'act3'),
+		new Route('/test/:var1/:var2/', 'page', 'act'),
+		new Route('/nums/:n1/:n2/:n3/', 'num', 'sum'),
+
 		
 	];
 	
