@@ -2,18 +2,15 @@
 namespace Project\Controllers;
 use \Core\Controller;
 
-class PageController extends Controller{
-	private $pages;
-
-	public function __construct(){
-		$this->pages=[
-			1=>'page 1',
-			2=>'page 2',
-			3=>'page 3',
-		];
-	}
-	public function show($params){
-		echo $this->pages[$params['id']];
+class PageController extends Controller
+{
+	public function act()
+	{
+		return $this->render('/page/act.php', [
+			'var1' => 'eee',
+			'var2' => 'bbb',
+			'var3' => 'kkk',
+		]);
 	}
 }
 
